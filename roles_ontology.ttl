@@ -1,0 +1,1590 @@
+@prefix ex: <http://example.org/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:Action a rdfs:Class ;
+    rdfs:label "Action"@en ;
+    ex:aspect ex:Proto_Change ;
+    ex:realm ex:Social ;
+    rdfs:subClassOf ex:Situation .
+
+ex:Affect a rdfs:Class ;
+    rdfs:label "Affect"@en ;
+    ex:aspect ex:Proto_Change ;
+    ex:realm ex:Mental ;
+    rdfs:subClassOf ex:Situation .
+
+ex:Affiliation a rdfs:Class ;
+    rdfs:label "Affiliation"@en ;
+    ex:aspect ex:Proto_Change ;
+    ex:realm ex:Social ;
+    rdfs:subClassOf ex:Situation .
+
+ex:Aspect a rdfs:Class ;
+    rdfs:label "Aspect"@en ;
+    rdfs:subClassOf ex:Entry .
+
+ex:Attitude a rdfs:Class ;
+    rdfs:label "Attitude"@en ;
+    ex:aspect ex:Proto_State ;
+    ex:realm ex:Mental ;
+    rdfs:subClassOf ex:Situation .
+
+ex:Authority a rdfs:Class ;
+    rdfs:label "Authority"@en ;
+    ex:aspect ex:Proto_State ;
+    ex:realm ex:Social ;
+    rdfs:subClassOf ex:Situation .
+
+ex:Causation a rdfs:Class ;
+    rdfs:label "Causation"@en ;
+    ex:aspect ex:Proto_Change ;
+    ex:realm ex:Mental ;
+    rdfs:subClassOf ex:Situation .
+
+ex:Cognition a rdfs:Class ;
+    rdfs:label "Cognition"@en ;
+    ex:aspect ex:Proto_Change ;
+    ex:realm ex:Mental ;
+    rdfs:subClassOf ex:Situation .
+
+ex:Communication a rdfs:Class ;
+    rdfs:label "Communication"@en ;
+    ex:aspect ex:Proto_Change ;
+    ex:realm ex:Social ;
+    rdfs:subClassOf ex:Situation .
+
+ex:Continuation a rdfs:Class ;
+    rdfs:label "Continuation"@en ;
+    ex:aspect ex:Proto_State ;
+    ex:realm ex:Physical ;
+    rdfs:subClassOf ex:Situation .
+
+ex:Creation a rdfs:Class ;
+    rdfs:label "Creation"@en ;
+    ex:aspect ex:Proto_Change ;
+    ex:realm ex:Physical ;
+    rdfs:subClassOf ex:Situation .
+
+ex:Desire a rdfs:Class ;
+    rdfs:label "Desire"@en ;
+    ex:aspect ex:Proto_State ;
+    ex:realm ex:Mental ;
+    rdfs:subClassOf ex:Situation .
+
+ex:Entity a rdfs:Class ;
+    rdfs:label "Entity"@en .
+
+ex:Entry a rdfs:Class ;
+    rdfs:label "Entry"@en .
+
+ex:Evaluation a rdfs:Class ;
+    rdfs:label "Evaluation"@en ;
+    ex:aspect ex:Proto_Change ;
+    ex:realm ex:Mental ;
+    rdfs:subClassOf ex:Situation .
+
+ex:Execution a rdfs:Class ;
+    rdfs:label "Execution"@en ;
+    ex:aspect ex:Proto_Change ;
+    ex:realm ex:Mental ;
+    rdfs:subClassOf ex:Situation .
+
+ex:Existence a rdfs:Class ;
+    rdfs:label "Existence"@en ;
+    ex:aspect ex:Proto_State ;
+    ex:realm ex:Physical ;
+    rdfs:subClassOf ex:Situation .
+
+ex:Experience a rdfs:Class ;
+    rdfs:label "Experience"@en ;
+    ex:aspect ex:Proto_State ;
+    ex:realm ex:Mental ;
+    rdfs:subClassOf ex:Situation .
+
+ex:Force a rdfs:Class ;
+    rdfs:label "Force"@en ;
+    ex:aspect ex:Proto_Change ;
+    ex:realm ex:Physical ;
+    rdfs:subClassOf ex:Situation .
+
+ex:Governance a rdfs:Class ;
+    rdfs:label "Governance"@en ;
+    ex:aspect ex:Proto_Change ;
+    ex:realm ex:Social ;
+    rdfs:subClassOf ex:Situation .
+
+ex:Information a rdfs:Class ;
+    rdfs:label "Information"@en ;
+    ex:aspect ex:Proto_State ;
+    ex:realm ex:Social ;
+    rdfs:subClassOf ex:Situation .
+
+ex:Interaction a rdfs:Class ;
+    rdfs:label "Interaction"@en ;
+    ex:aspect ex:Proto_Change ;
+    ex:realm ex:Social ;
+    rdfs:subClassOf ex:Situation .
+
+ex:Kinship a rdfs:Class ;
+    rdfs:label "Kinship"@en ;
+    ex:aspect ex:Proto_State ;
+    ex:realm ex:Social ;
+    rdfs:subClassOf ex:Situation .
+
+ex:Knowledge a rdfs:Class ;
+    rdfs:label "Knowledge"@en ;
+    ex:aspect ex:Proto_State ;
+    ex:realm ex:Mental ;
+    rdfs:subClassOf ex:Situation .
+
+ex:Location a rdfs:Class ;
+    rdfs:label "Location"@en ;
+    ex:aspect ex:Proto_State ;
+    ex:realm ex:Physical ;
+    rdfs:subClassOf ex:Situation .
+
+ex:Memory a rdfs:Class ;
+    rdfs:label "Memory"@en ;
+    ex:aspect ex:Proto_State ;
+    ex:realm ex:Mental ;
+    rdfs:subClassOf ex:Situation .
+
+ex:Motion a rdfs:Class ;
+    rdfs:label "Motion"@en ;
+    ex:aspect ex:Proto_Change ;
+    ex:realm ex:Physical ;
+    rdfs:subClassOf ex:Situation .
+
+ex:Occurrence a rdfs:Class ;
+    rdfs:label "Occurrence"@en ;
+    ex:aspect ex:Proto_Change ;
+    ex:realm ex:Physical ;
+    rdfs:subClassOf ex:Situation .
+
+ex:Perception a rdfs:Class ;
+    rdfs:label "Perception"@en ;
+    ex:aspect ex:Proto_Change ;
+    ex:realm ex:Mental ;
+    rdfs:subClassOf ex:Situation .
+
+ex:Possession a rdfs:Class ;
+    rdfs:label "Possession"@en ;
+    ex:aspect ex:Proto_State ;
+    ex:realm ex:Social ;
+    rdfs:subClassOf ex:Situation .
+
+ex:Realm a rdfs:Class ;
+    rdfs:label "Realm"@en ;
+    rdfs:subClassOf ex:Entry .
+
+ex:Situation a rdfs:Class ;
+    rdfs:label "Situation"@en .
+
+ex:Transaction a rdfs:Class ;
+    rdfs:label "Transaction"@en ;
+    ex:aspect ex:Proto_Change ;
+    ex:realm ex:Social ;
+    rdfs:subClassOf ex:Situation .
+
+ex:Transformation a rdfs:Class ;
+    rdfs:label "Transformation"@en ;
+    ex:aspect ex:Proto_Change ;
+    ex:realm ex:Physical ;
+    rdfs:subClassOf ex:Situation .
+
+ex:Usage a rdfs:Class ;
+    rdfs:label "Usage"@en ;
+    rdfs:subClassOf ex:Entry .
+
+ex:Volition a rdfs:Class ;
+    rdfs:label "Volition"@en ;
+    ex:aspect ex:Proto_Change ;
+    ex:realm ex:Mental ;
+    rdfs:subClassOf ex:Situation .
+
+ex:action a rdf:Property ;
+    rdfs:label "action"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Action ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:goal .
+
+ex:advisee a rdf:Property ;
+    rdfs:label "advisee"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Communication ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:addressee .
+
+ex:adviser a rdf:Property ;
+    rdfs:label "adviser"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Communication ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:communicator .
+
+ex:affecter a rdf:Property ;
+    rdfs:label "affecter"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Affect ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:initiator .
+
+ex:agonist a rdf:Property ;
+    rdfs:label "agonist"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Force ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:essence .
+
+ex:analogue a rdf:Property ;
+    rdfs:label "analogue"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Evaluation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:phenomenon .
+
+ex:antagonist a rdf:Property ;
+    rdfs:label "antagonist"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Force ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:initiator .
+
+ex:applier a rdf:Property ;
+    rdfs:label "applier"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Motion ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:mover .
+
+ex:asset a rdf:Property ;
+    rdfs:label "asset"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Transaction ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:resource .
+
+ex:associator a rdf:Property ;
+    rdfs:label "associator"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Evaluation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:evaluator .
+
+ex:attacker a rdf:Property ;
+    rdfs:label "attacker"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Action ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:actor .
+
+ex:attitude a rdf:Property ;
+    rdfs:label "attitude"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Attitude ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:modifier .
+
+ex:attribute a rdf:Property ;
+    rdfs:label "attribute"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Evaluation ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:modifier .
+
+ex:barrier a rdf:Property ;
+    rdfs:label "barrier"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Action ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:implement .
+
+ex:basis a rdf:Property ;
+    rdfs:label "basis"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Evaluation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:standard .
+
+ex:bearer a rdf:Property ;
+    rdfs:label "bearer"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Motion ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:carrier .
+
+ex:before a rdf:Property ;
+    rdfs:label "before"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Occurrence ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:order .
+
+ex:being a rdf:Property ;
+    rdfs:label "being"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Existence ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:essence .
+
+ex:beneficiary a rdf:Property ;
+    rdfs:label "beneficiary"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Affect ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:affectee .
+
+ex:buyer a rdf:Property ;
+    rdfs:label "buyer"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Transaction ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:transactor .
+
+ex:candidate a rdf:Property ;
+    rdfs:label "candidate"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Evaluation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:phenomenon .
+
+ex:cargo a rdf:Property ;
+    rdfs:label "cargo"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Motion ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:theme .
+
+ex:catalyst a rdf:Property ;
+    rdfs:label "catalyst"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Transformation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:resource .
+
+ex:certainty a rdf:Property ;
+    rdfs:label "certainty"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Attitude ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:modifier .
+
+ex:characterization a rdf:Property ;
+    rdfs:label "characterization"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Communication ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:modifier .
+
+ex:collaborator a rdf:Property ;
+    rdfs:label "collaborator"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Interaction ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:interactor .
+
+ex:concealer a rdf:Property ;
+    rdfs:label "concealer"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Motion ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:mover .
+
+ex:concept a rdf:Property ;
+    rdfs:label "concept"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Cognition ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:essence .
+
+ex:conduit a rdf:Property ;
+    rdfs:label "conduit"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Motion ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:carrier .
+
+ex:container a rdf:Property ;
+    rdfs:label "container"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Evaluation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:phenomenon .
+
+ex:content a rdf:Property ;
+    rdfs:label "content"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Information ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:essence .
+
+ex:creator a rdf:Property ;
+    rdfs:label "creator"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Creation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:maker .
+
+ex:criterion a rdf:Property ;
+    rdfs:label "criterion"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Evaluation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:standard .
+
+ex:dealer a rdf:Property ;
+    rdfs:label "dealer"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Transaction ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:transactor .
+
+ex:decider a rdf:Property ;
+    rdfs:label "decider"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Evaluation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:evaluator .
+
+ex:decision a rdf:Property ;
+    rdfs:label "decision"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Evaluation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:conclusion .
+
+ex:defendee a rdf:Property ;
+    rdfs:label "defendee"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Action ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:target .
+
+ex:defender a rdf:Property ;
+    rdfs:label "defender"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Action ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:actor .
+
+ex:depriver a rdf:Property ;
+    rdfs:label "depriver"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Motion ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:mover .
+
+ex:destination a rdf:Property ;
+    rdfs:label "destination"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Motion ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:orientation .
+
+ex:destroyer a rdf:Property ;
+    rdfs:label "destroyer"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Creation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:maker .
+
+ex:document a rdf:Property ;
+    rdfs:label "document"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Information ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:source .
+
+ex:driver a rdf:Property ;
+    rdfs:label "driver"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Motion ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:mover .
+
+ex:duration a rdf:Property ;
+    rdfs:label "duration"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Occurrence ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:time .
+
+ex:during a rdf:Property ;
+    rdfs:label "during"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Occurrence ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:order .
+
+ex:educator a rdf:Property ;
+    rdfs:label "educator"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Cognition ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:initiator .
+
+ex:effect a rdf:Property ;
+    rdfs:label "effect"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Causation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:essence .
+
+ex:employee a rdf:Property ;
+    rdfs:label "employee"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Affiliation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:participant .
+
+ex:employer a rdf:Property ;
+    rdfs:label "employer"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Affiliation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:affiliator .
+
+ex:end a rdf:Property ;
+    rdfs:label "end"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Occurrence ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:time .
+
+ex:engager a rdf:Property ;
+    rdfs:label "engager"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Affiliation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:participant .
+
+ex:entity a rdf:Property ;
+    rdfs:label "entity"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Continuation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:essence .
+
+ex:event a rdf:Property ;
+    rdfs:label "event"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Execution ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:essence .
+
+ex:evidence a rdf:Property ;
+    rdfs:label "evidence"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Evaluation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:standard .
+
+ex:executor a rdf:Property ;
+    rdfs:label "executor"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Execution ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:initiator .
+
+ex:expeller a rdf:Property ;
+    rdfs:label "expeller"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Affiliation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:affiliator .
+
+ex:experiencer a rdf:Property ;
+    rdfs:label "experiencer"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Experience ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:essence .
+
+ex:facilitator a rdf:Property ;
+    rdfs:label "facilitator"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Causation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:cause .
+
+ex:field a rdf:Property ;
+    rdfs:label "field"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Cognition ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:modifier .
+
+ex:final_state a rdf:Property ;
+    rdfs:label "final state"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Continuation ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:state .
+
+ex:frequency a rdf:Property ;
+    rdfs:label "frequency"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Occurrence ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:time .
+
+ex:garment a rdf:Property ;
+    rdfs:label "garment"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Motion ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:theme .
+
+ex:gatekeeper a rdf:Property ;
+    rdfs:label "gatekeeper"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Affiliation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:affiliator .
+
+ex:governor a rdf:Property ;
+    rdfs:label "governor"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Governance ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:initiator .
+
+ex:guarantor a rdf:Property ;
+    rdfs:label "guarantor"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Action ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:actor .
+
+ex:impression a rdf:Property ;
+    rdfs:label "impression"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Memory ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:modifier .
+
+ex:inducee a rdf:Property ;
+    rdfs:label "inducee"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Action ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:target .
+
+ex:inducer a rdf:Property ;
+    rdfs:label "inducer"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Action ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:actor .
+
+ex:industry a rdf:Property ;
+    rdfs:label "industry"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Affiliation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:institution .
+
+ex:initial_state a rdf:Property ;
+    rdfs:label "initial state"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Continuation ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:state .
+
+ex:instant a rdf:Property ;
+    rdfs:label "instant"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Occurrence ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:time .
+
+ex:instrument a rdf:Property ;
+    rdfs:label "instrument"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Creation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:resource .
+
+ex:intender a rdf:Property ;
+    rdfs:label "intender"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Volition ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:initiator .
+
+ex:intent a rdf:Property ;
+    rdfs:label "intent"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Volition ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:essence .
+
+ex:interaction a rdf:Property ;
+    rdfs:label "interaction"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Interaction ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:goal .
+
+ex:issuer a rdf:Property ;
+    rdfs:label "issuer"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Transaction ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:transactor .
+
+ex:item a rdf:Property ;
+    rdfs:label "item"@en ;
+    ex:usage ex:Optional,
+        ex:Typical ;
+    rdfs:domain ex:Evaluation,
+        ex:Transaction ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:essence,
+        ex:phenomenon .
+
+ex:jurisdiction a rdf:Property ;
+    rdfs:label "jurisdiction"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Authority ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:modifier .
+
+ex:knower a rdf:Property ;
+    rdfs:label "knower"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Knowledge ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:essence .
+
+ex:knowledge a rdf:Property ;
+    rdfs:label "knowledge"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Knowledge ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:modifier .
+
+ex:landmark a rdf:Property ;
+    rdfs:label "landmark"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Location ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:modifier .
+
+ex:language a rdf:Property ;
+    rdfs:label "language"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Communication ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:modifier .
+
+ex:location a rdf:Property ;
+    rdfs:label "location"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Motion ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:orientation .
+
+ex:maleficiary a rdf:Property ;
+    rdfs:label "maleficiary"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Affect ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:affectee .
+
+ex:manner a rdf:Property ;
+    rdfs:label "manner"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Occurrence ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:modifier .
+
+ex:material a rdf:Property ;
+    rdfs:label "material"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Creation ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:modifier .
+
+ex:means a rdf:Property ;
+    rdfs:label "means"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Force ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:resource .
+
+ex:medium a rdf:Property ;
+    rdfs:label "medium"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Communication ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:resource .
+
+ex:member a rdf:Property ;
+    rdfs:label "member"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Affiliation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:participant .
+
+ex:method a rdf:Property ;
+    rdfs:label "method"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Cognition ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:resource .
+
+ex:modality a rdf:Property ;
+    rdfs:label "modality"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Attitude ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:modifier .
+
+ex:mode a rdf:Property ;
+    rdfs:label "mode"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Existence ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:modifier .
+
+ex:modulation a rdf:Property ;
+    rdfs:label "modulation"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Execution ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:modifier .
+
+ex:multiplier a rdf:Property ;
+    rdfs:label "multiplier"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Evaluation ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:modifier .
+
+ex:occupation a rdf:Property ;
+    rdfs:label "occupation"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Affiliation ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:role .
+
+ex:opponent a rdf:Property ;
+    rdfs:label "opponent"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Attitude ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:adherent .
+
+ex:option a rdf:Property ;
+    rdfs:label "option"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Evaluation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:phenomenon .
+
+ex:organization a rdf:Property ;
+    rdfs:label "organization"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Affiliation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:institution .
+
+ex:origin a rdf:Property ;
+    rdfs:label "origin"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Motion ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:orientation .
+
+ex:passenger a rdf:Property ;
+    rdfs:label "passenger"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Motion ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:theme .
+
+ex:phase a rdf:Property ;
+    rdfs:label "pe"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Execution ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:modifier .
+
+ex:perceiver a rdf:Property ;
+    rdfs:label "perceiver"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Perception ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:initiator .
+
+ex:percept a rdf:Property ;
+    rdfs:label "percept"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Perception ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:essence .
+
+ex:polarity a rdf:Property ;
+    rdfs:label "polarity"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Attitude ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:modifier .
+
+ex:possession a rdf:Property ;
+    rdfs:label "possession"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Possession ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:modifier .
+
+ex:possessor a rdf:Property ;
+    rdfs:label "possessor"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Possession ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:essence .
+
+ex:preventer a rdf:Property ;
+    rdfs:label "preventer"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Causation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:cause .
+
+ex:product a rdf:Property ;
+    rdfs:label "product"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Creation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:goal .
+
+ex:proponent a rdf:Property ;
+    rdfs:label "proponent"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Attitude ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:adherent .
+
+ex:proposition a rdf:Property ;
+    rdfs:label "proposition"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Attitude ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:modifier .
+
+ex:provider a rdf:Property ;
+    rdfs:label "provider"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Motion ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:mover .
+
+ex:purpose a rdf:Property ;
+    rdfs:label "purpose"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Volition ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:goal .
+
+ex:qualifier a rdf:Property ;
+    rdfs:label "qualifier"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Evaluation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:evaluator .
+
+ex:quality a rdf:Property ;
+    rdfs:label "quality"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Evaluation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:conclusion .
+
+ex:quantifier a rdf:Property ;
+    rdfs:label "quantifier"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Evaluation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:evaluator .
+
+ex:quantity a rdf:Property ;
+    rdfs:label "quantity"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Evaluation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:conclusion .
+
+ex:rank a rdf:Property ;
+    rdfs:label "rank"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Affiliation ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:role .
+
+ex:reaction a rdf:Property ;
+    rdfs:label "reaction"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Affect ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:goal .
+
+ex:recipient a rdf:Property ;
+    rdfs:label "recipient"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Transaction ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:goal .
+
+ex:reciprocator a rdf:Property ;
+    rdfs:label "reciprocator"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Interaction ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:interactor .
+
+ex:refrainer a rdf:Property ;
+    rdfs:label "refrainer"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Affiliation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:participant .
+
+ex:relation a rdf:Property ;
+    rdfs:label "relation"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Kinship ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:modifier .
+
+ex:relative a rdf:Property ;
+    rdfs:label "relative"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Kinship ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:essence .
+
+ex:remover a rdf:Property ;
+    rdfs:label "remover"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Motion ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:mover .
+
+ex:request a rdf:Property ;
+    rdfs:label "request"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Communication ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:message .
+
+ex:requestee a rdf:Property ;
+    rdfs:label "requestee"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Communication ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:addressee .
+
+ex:requester a rdf:Property ;
+    rdfs:label "requester"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Communication ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:communicator .
+
+ex:requirement a rdf:Property ;
+    rdfs:label "requirement"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Evaluation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:standard .
+
+ex:responder a rdf:Property ;
+    rdfs:label "responder"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Communication ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:communicator .
+
+ex:response a rdf:Property ;
+    rdfs:label "response"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Communication ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:message .
+
+ex:result a rdf:Property ;
+    rdfs:label "result"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Transformation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:goal .
+
+ex:revealer a rdf:Property ;
+    rdfs:label "revealer"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Motion ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:mover .
+
+ex:rite a rdf:Property ;
+    rdfs:label "rite"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Affiliation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:resource .
+
+ex:rule a rdf:Property ;
+    rdfs:label "rule"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Governance ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:resource .
+
+ex:ruler a rdf:Property ;
+    rdfs:label "ruler"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Authority ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:essence .
+
+ex:seller a rdf:Property ;
+    rdfs:label "seller"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Transaction ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:transactor .
+
+ex:sense a rdf:Property ;
+    rdfs:label "sense"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Perception ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:resource .
+
+ex:sentiment a rdf:Property ;
+    rdfs:label "sentiment"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Evaluation ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:modifier .
+
+ex:signal a rdf:Property ;
+    rdfs:label "signal"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Communication ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:modifier .
+
+ex:situation a rdf:Property ;
+    rdfs:label "situation"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Occurrence ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:essence .
+
+ex:speaker a rdf:Property ;
+    rdfs:label "speaker"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Communication ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:communicator .
+
+ex:start a rdf:Property ;
+    rdfs:label "start"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Occurrence ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:time .
+
+ex:stimulus a rdf:Property ;
+    rdfs:label "stimulus"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Experience ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:modifier .
+
+ex:stratagem a rdf:Property ;
+    rdfs:label "stratagem"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Volition ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:resource .
+
+ex:student a rdf:Property ;
+    rdfs:label "student"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Cognition ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:goal .
+
+ex:subordinate a rdf:Property ;
+    rdfs:label "subordinate"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Governance ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:essence .
+
+ex:task a rdf:Property ;
+    rdfs:label "task"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Affiliation ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:role .
+
+ex:topic a rdf:Property ;
+    rdfs:label "topic"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Communication ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:modifier .
+
+ex:trajector a rdf:Property ;
+    rdfs:label "trajector"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Location ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:essence .
+
+ex:trajectory a rdf:Property ;
+    rdfs:label "trajectory"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Motion ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:orientation .
+
+ex:transformer a rdf:Property ;
+    rdfs:label "transformer"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Transformation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:initiator .
+
+ex:undergoer a rdf:Property ;
+    rdfs:label "undergoer"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Transformation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:essence .
+
+ex:unit a rdf:Property ;
+    rdfs:label "unit"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Evaluation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:standard .
+
+ex:utterance a rdf:Property ;
+    rdfs:label "utterance"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Information ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:source .
+
+ex:value a rdf:Property ;
+    rdfs:label "value"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Evaluation ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:modifier .
+
+ex:vehicle a rdf:Property ;
+    rdfs:label "vehicle"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Motion ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:carrier .
+
+ex:victim a rdf:Property ;
+    rdfs:label "victim"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Action ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:target .
+
+ex:weapon a rdf:Property ;
+    rdfs:label "weapon"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Action ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:implement .
+
+ex:wearer a rdf:Property ;
+    rdfs:label "wearer"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Motion ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:carrier .
+
+ex:wish a rdf:Property ;
+    rdfs:label "wish"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Desire ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:modifier .
+
+ex:wisher a rdf:Property ;
+    rdfs:label "wisher"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Desire ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:essence .
+
+ex:witness a rdf:Property ;
+    rdfs:label "witness"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Memory ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:essence .
+
+ex:work a rdf:Property ;
+    rdfs:label "work"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Creation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:essence .
+
+ex:addressee a rdf:Property ;
+    rdfs:label "addressee"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Communication ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:goal .
+
+ex:adherent a rdf:Property ;
+    rdfs:label "adherent"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Attitude ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:essence .
+
+ex:affectee a rdf:Property ;
+    rdfs:label "affectee"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Affect ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:essence .
+
+ex:cause a rdf:Property ;
+    rdfs:label "cause"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Causation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:initiator .
+
+ex:implement a rdf:Property ;
+    rdfs:label "implement"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Action ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:resource .
+
+ex:institution a rdf:Property ;
+    rdfs:label "institution"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Affiliation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:goal .
+
+ex:interactor a rdf:Property ;
+    rdfs:label "interactor"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Interaction ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:initiator .
+
+ex:maker a rdf:Property ;
+    rdfs:label "maker"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Creation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:initiator .
+
+ex:message a rdf:Property ;
+    rdfs:label "message"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Communication ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:essence .
+
+ex:order a rdf:Property ;
+    rdfs:label "order"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Occurrence ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:modifier .
+
+ex:source a rdf:Property ;
+    rdfs:label "source"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Information ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:modifier .
+
+ex:state a rdf:Property ;
+    rdfs:label "state"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Continuation ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:modifier .
+
+ex:affiliator a rdf:Property ;
+    rdfs:label "affiliator"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Affiliation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:initiator .
+
+ex:conclusion a rdf:Property ;
+    rdfs:label "conclusion"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Evaluation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:goal .
+
+ex:role a rdf:Property ;
+    rdfs:label "role"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Affiliation ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:modifier .
+
+ex:target a rdf:Property ;
+    rdfs:label "target"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Action ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:essence .
+
+ex:theme a rdf:Property ;
+    rdfs:label "theme"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Motion ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:essence .
+
+ex:actor a rdf:Property ;
+    rdfs:label "actor"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Action ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:initiator .
+
+ex:carrier a rdf:Property ;
+    rdfs:label "carrier"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Motion ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:resource .
+
+ex:communicator a rdf:Property ;
+    rdfs:label "communicator"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Communication ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:initiator .
+
+ex:evaluator a rdf:Property ;
+    rdfs:label "evaluator"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Evaluation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:initiator .
+
+ex:orientation a rdf:Property ;
+    rdfs:label "orientation"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Motion ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:modifier .
+
+ex:participant a rdf:Property ;
+    rdfs:label "participant"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Affiliation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:essence .
+
+ex:transactor a rdf:Property ;
+    rdfs:label "transactor"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Transaction ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:initiator .
+
+ex:phenomenon a rdf:Property ;
+    rdfs:label "phenomenon"@en ;
+    ex:usage ex:Typical ;
+    rdfs:domain ex:Evaluation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:essence .
+
+ex:proto-role a rdf:Property ;
+    rdfs:label "Proto-role"@en .
+
+ex:standard a rdf:Property ;
+    rdfs:label "standard"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Evaluation ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:resource .
+
+ex:time a rdf:Property ;
+    rdfs:label "time"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Occurrence ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:modifier .
+
+ex:mover a rdf:Property ;
+    rdfs:label "mover"@en ;
+    ex:usage ex:Optional ;
+    rdfs:domain ex:Motion ;
+    rdfs:range ex:Entity ;
+    rdfs:subPropertyOf ex:initiator .
+
+ex:Physical a ex:Realm ;
+    rdfs:label "Physical"@en .
+
+ex:Social a ex:Realm ;
+    rdfs:label "Social"@en .
+
+ex:goal a rdf:Property ;
+    rdfs:label "Goal"@en ;
+    rdfs:subPropertyOf ex:proto-role .
+
+ex:Mental a ex:Realm ;
+    rdfs:label "Mental"@en .
+
+ex:Proto_State a ex:Aspect ;
+    rdfs:label "Proto-State"@en .
+
+ex:resource a rdf:Property ;
+    rdfs:label "Resource"@en ;
+    rdfs:subPropertyOf ex:proto-role .
+
+ex:initiator a rdf:Property ;
+    rdfs:label "Initiator"@en ;
+    rdfs:subPropertyOf ex:proto-role .
+
+ex:Proto_Change a ex:Aspect ;
+    rdfs:label "Proto-Change"@en .
+
+ex:essence a rdf:Property ;
+    rdfs:label "Essence"@en ;
+    rdfs:subPropertyOf ex:proto-role .
+
+ex:modifier a rdf:Property ;
+    rdfs:label "Modifier"@en ;
+    rdfs:range ex:Entry ;
+    rdfs:subPropertyOf ex:proto-role .
+
+ex:Typical a ex:Usage ;
+    rdfs:label "Typical"@en .
+
+ex:Optional a ex:Usage ;
+    rdfs:label "Optional"@en .
+
